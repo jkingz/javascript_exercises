@@ -38,3 +38,24 @@ fruits[3] = "grapes"; // adding fruit in index 3 using array index
 fruits.push("pears"); // adding fruit in the index 4 using array prototype .push
 
 fruits.unshift("strawberries"); // adding fruit in the index 0 using array prototype .unshift
+
+// Object literals
+const person = {
+  fname: "king",
+  sex: "male",
+  hobbies: ["music", "games", "programming"],
+  address: {
+    street: "street st.",
+    block: "3rd",
+    city: "city"
+  }
+};
+console.table([person.name, person.sex]);
+console.group("person");
+console.log(person);
+console.group("address");
+console.log(person.address);
+
+//destructuring es6 feature
+const { fname, sex } = person;
+console.log(fname);
