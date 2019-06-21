@@ -28,3 +28,13 @@ const king = "jkingz koyz";
 console.log(s.length, "s length");
 console.log(s.toUpperCase());
 console.log(king.split(""));
+
+// Array - variables that holds multiple values
+
+const fruits = ["apple", "mango", "oranges"];
+
+fruits[3] = "grapes"; // adding fruit in index 3 using array index
+
+fruits.push("pears"); // adding fruit in the index 4 using array prototype .push
+
+fruits.unshift("strawberries"); // adding fruit in the index 0 using array prototype .unshift
