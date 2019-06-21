@@ -105,3 +105,14 @@ const todoCompleted = todos.filter(function(todo) {
   return todo.isCompleted === true;
 });
 console.log(todoCompleted);
+
+// filtering todo that is complete
+// then mapping thru each is completed todo text
+const todoTextIsCompleted = todos
+  .filter(function(todo) {
+    return todo.isCompleted === true;
+  })
+  .map(function(todo) {
+    return todo.text;
+  });
+console.log(todoTextIsCompleted);
