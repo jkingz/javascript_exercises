@@ -59,3 +59,23 @@ console.log(person.address);
 //destructuring es6 feature
 const { fname, sex } = person;
 console.log(fname);
+
+// Arrays of objects
+const todos = [
+  {
+    id: 1,
+    text: "Meet me somewhere",
+    isCompleted: true
+  },
+  {
+    id: 2,
+    text: "Meeting with boss",
+    isCompleted: false
+  },
+  {
+    id: 3,
+    text: "Interview success",
+    isCompleted: true
+  }
+];
+console.log(todos[2].text);
