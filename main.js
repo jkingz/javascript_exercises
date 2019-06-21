@@ -187,3 +187,22 @@ const person1 = new Person("John", "King", "10/27/2019");
 console.log(person1);
 console.log(person1.getBirthYear());
 console.log(person1.getFullName());
+
+// es6 classes syntactic sugar prettier way
+// Class
+class Bicycle {
+  constructor(body, pedal, chain, sprocket) {
+    this.body = body;
+    this.pedal = pedal;
+    this.chain = chain;
+  }
+  // class method
+  getFullBike() {
+    return `${this.body} ${this.pedal} ${this.chain}`;
+  }
+}
+
+// Instantiate an object
+const bicycle = new Bicycle("Alloy", "two", "large");
+console.log(bicycle);
+console.log(bicycle.getFullBike());
