@@ -50,7 +50,7 @@ const person = {
     city: "city"
   }
 };
-console.table([person.name, person.sex]);
+console.table([person.fname, person.sex]);
 console.group("person");
 console.log(person);
 console.groupEnd;
@@ -87,3 +87,21 @@ console.log(todos[2].text);
 const todoJSON = JSON.stringify(todos);
 console.group("JSON");
 console.log(todoJSON);
+
+// high order array method
+// map, filter, reduce, foreach
+todos.forEach(function(todo) {
+  console.log(todo.text);
+});
+
+// map is returning array
+const todoText = todos.map(function(todo) {
+  return todo.text;
+});
+console.log(todoText);
+
+// filter return arrays of objects
+const todoCompleted = todos.filter(function(todo) {
+  return todo.isCompleted === true;
+});
+console.log(todoCompleted);
