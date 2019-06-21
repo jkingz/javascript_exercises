@@ -20,3 +20,11 @@ console.log(`My name is ${name} and I am ${age}`);
 
 const hello = `My name is ${name} and I am ${age}`;
 console.log(hello);
+
+// Using javascript string methods
+// .split .join and many more
+const s = "Hello World!";
+const king = "jkingz koyz";
+console.log(s.length, "s length");
+console.log(s.toUpperCase());
+console.log(king.split(""));
