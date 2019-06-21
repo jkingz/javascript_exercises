@@ -116,3 +116,9 @@ const todoTextIsCompleted = todos
     return todo.text;
   });
 console.log(todoTextIsCompleted);
+
+// ternary operator sample
+const x = 11;
+
+const color = x > 10 ? "red" : "green";
+console.log(color);
