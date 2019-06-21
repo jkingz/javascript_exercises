@@ -1,12 +1,8 @@
-// Selector
-// Single element selector
-// old way
-document.getElementById("my-form");
-// new way
-document.querySelector(".container");
+// playing with addEventListiner
+const btn = document.querySelector(".btn");
 
-// Multiple element selector
-// old way
-console.log(document.getElementsByClassName("item"));
-// new way
-console.log(document.querySelectorAll(".item"));
+btn.addEventListener("click", e => {
+  e.preventDefault();
+  document.querySelector("#my-form").style.background = "#ccc";
+  document.querySelector("body").classList.add("bg-dark");
+});
