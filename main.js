@@ -156,3 +156,34 @@ const addNumber = (num3, num4) => {
   return num3 * num4;
 };
 console.log(addNumber(6, 7));
+
+// OOP in es5
+// Constructive/Constructor function prototypes
+function Person(firstName, lastName, dob) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.dob = new Date(dob);
+
+  //create methods inside the function itself
+  //   this.getBirthYear = function() {
+  //     return this.dob.getFullYear();
+  //   };
+  //   this.getFullName = function() {
+  //     //template literal
+  //     return `${this.firstName} ${this.lastName}`;
+  //   };
+}
+
+// using prototype
+Person.prototype.getBirthYear = function() {
+  return this.dob.getFullYear();
+};
+Person.prototype.getFullName = function() {
+  return `${this.firstName} ${this.lastName}`;
+};
+
+// Instantiate an object
+const person1 = new Person("John", "King", "10/27/2019");
+console.log(person1);
+console.log(person1.getBirthYear());
+console.log(person1.getFullName());
