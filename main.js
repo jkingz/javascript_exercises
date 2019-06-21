@@ -53,11 +53,14 @@ const person = {
 console.table([person.name, person.sex]);
 console.group("person");
 console.log(person);
+console.groupEnd;
 console.group("address");
 console.log(person.address);
+console.groupEnd;
 
 //destructuring es6 feature
 const { fname, sex } = person;
+console.group();
 console.log(fname);
 
 // Arrays of objects
@@ -79,3 +82,8 @@ const todos = [
   }
 ];
 console.log(todos[2].text);
+
+// Format arrays of object to JSON
+const todoJSON = JSON.stringify(todos);
+console.group("JSON");
+console.log(todoJSON);
