@@ -137,3 +137,22 @@ switch (color1) {
     console.log("color is not red or blue");
     break;
 }
+
+// Functions and es6 arrow function
+
+function addNums(num1, num2) {
+  return num1 + num2;
+}
+console.log(addNums(5, 4));
+
+// implicit return arrow function
+const addNumbers = (num6, num7) => num6 / num7;
+console.log(addNumbers(9, 3));
+
+// explicit return arrow function
+// surrounded by curlies are the to get statement
+// or multiple statements or expression
+const addNumber = (num3, num4) => {
+  return num3 * num4;
+};
+console.log(addNumber(6, 7));
